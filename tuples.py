@@ -13,8 +13,8 @@ def convert_coordinate(coordinate):
 
 
 def create_record(azara_record, rui_record):
-    c1=azara_record[1][0]
-    c2=azara_record[1][1]
-    CA=(c1,c2)
+    CA=convert_coordinate(get_coordinate(azara_record))
     if CA==rui_record[1]:
         return (azara_record[0],azara_record[1],rui_record[0], rui_record[1], rui_record[2])
+    else:
+        return "not a match"
