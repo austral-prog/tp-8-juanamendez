@@ -9,8 +9,7 @@ def get_coordinate(record):
 def convert_coordinate(coordinate):
     c1=coordinate[0]
     c2=coordinate[1]
-    tuple=(c1,c2)
-    return tuple
+    return (c1,c2)
 
 
 def create_record(azara_record, rui_record):
@@ -18,5 +17,4 @@ def create_record(azara_record, rui_record):
     c2=azara_record[1][1]
     CA=(c1,c2)
     if CA==rui_record[1]:
-        result=(azara_record[0],azara_record[1],rui_record[0], rui_record[1], rui_record[2])
-        return result
+        return (azara_record[0],azara_record[1],rui_record[0], rui_record[1], rui_record[2])
