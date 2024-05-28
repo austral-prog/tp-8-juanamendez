@@ -26,11 +26,14 @@ def check_drinks(drink_name, drink_ingredients):
     name followed by "Cocktail" (includes alcohol).
 
     """
+    y=''
+    f=(cocktail)
+    v=('mocktail')
     for ingridient in drink_ingredients:
         if ingridient in ALCOHOLS:
-            y='cocktail'
+            y=f
             break
         else:
-            y='mocktail'
-    return f'{drink_name} {y}'
+            y=v
+    return drink_name, y
 
