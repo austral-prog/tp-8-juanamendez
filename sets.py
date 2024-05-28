@@ -29,8 +29,8 @@ def check_drinks(drink_name, drink_ingredients):
     y=""
     for ingridient in drink_ingredients:
         if ingridient in ALCOHOLS:
-            y='cocktail'
+            y='Cocktail'
             break
         else:
-            y='mocktail'
+            y='Mocktail'
     return f'{drink_name} {y}'
